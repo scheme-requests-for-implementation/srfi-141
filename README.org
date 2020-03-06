@@ -1,6 +1,8 @@
 * SRFI 141: Integer division
 
-** by Taylor Campbell, John Cowan
+** by Taylor Campbell and John Cowan
+
+
 
 This repository hosts [[https://srfi.schemers.org/srfi-141/][SRFI 141]]: Integer division, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
