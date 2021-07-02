@@ -6,6 +6,8 @@
 
 keywords: [[https://srfi.schemers.org/?keywords=numbers][Numbers]], [[https://srfi.schemers.org/?keywords=r7rs-large][R7RS Large]], [[https://srfi.schemers.org/?keywords=r7rs-large-tangerine][R7RS Large: Tangerine Edition]]
 
+library-name: integer-division
+
 This repository hosts [[https://srfi.schemers.org/srfi-141/][SRFI 141]]: Integer division, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /final/ status.
