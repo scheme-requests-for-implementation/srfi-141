@@ -27,6 +27,12 @@ Taylor Campbell, John Cowan
   <li>Draft #2 published: 2016-09-22</li>
   <li>Draft #3 published: 2016-12-01</li>
   <li>Finalized: 2016-12-14</li>
+  <li>Revised to fix errata:
+    <ul>
+      <li>2022-12-07 (Fix typos.  Make the language clearer with
+	respect to <a href="#erratum-1-nonzero-1">some</a>
+	<a href="#erratum-1-nonzero-2">nonzero</a>
+	cases.)</li></ul></li>
 </ul>
 
 <h1>Abstract</h1>
@@ -169,7 +175,7 @@ dividing an exact zero by an inexact number.
 <p>
 Thus a nonzero <em>r</em> is negative iff <em>d</em> is negative.
 </p>
-<p>
+<p id="erratum-1-nonzero-1">
 <tt>(ceiling/ </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
 <tt>(ceiling-quotient </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
 <tt>(ceiling-remainder </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
@@ -195,7 +201,7 @@ octets desired in a key for a symmetric cipher, to be derived using
 the cryptographic hash function; then the quotient is the number of
 hash values needed to concatenate to make a key.
 </p>
-<p>
+<p id="erratum-1-nonzero-2">
 <tt>(truncate/ </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
 <tt>(truncate-quotient </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
 <tt>(truncate-remainder </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
@@ -297,7 +303,7 @@ following files:</p>
 Thanks to Sudarshan S. Chawathe for catching several significant errors.
 
 <h1>Copyright</h1>
-Copyright (C) Taylor Campbell, John Cowan (2016).  All Rights Reserved. 
+Copyright (C) Taylor Campbell, John Cowan (2016).  All Rights Reserved.
 
 <p>
   Permission is hereby granted, free of charge, to any person
