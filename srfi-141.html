@@ -145,7 +145,7 @@ round, Euclidean and balanced — there is a family of three procedures: one, na
 remainder as multiple return values; one, named <tt>&lt;operator&gt;-quotient</tt>,
 to return only the quotient; and one, named <tt>&lt;operator&gt;-remainder</tt>, to
 return only the remainder.  Each division operator pair is specified by
-defining the quotient <em>q</em> in terms of the numerator <em>a</em> and the denominator <em>n</em>.
+defining the quotient <em>q</em> in terms of the numerator <em>n</em> and the denominator <em>d</em>.
 Tacitly the remainder <em>r</em> is as above: <em>r</em> = <em>n</em> - <em>dq</em>.
 </p>
 <p>
@@ -167,7 +167,7 @@ dividing an exact zero by an inexact number.
 </p>
 </blockquote>
 <p>
-Thus <em>r</em> is negative iff <em>d</em> is negative.
+Thus a nonzero <em>r</em> is negative iff <em>d</em> is negative.
 </p>
 <p>
 <tt>(ceiling/ </tt><em>numerator</em> <em>denominator</em><tt>)</tt><br />
@@ -180,10 +180,10 @@ Thus <em>r</em> is negative iff <em>d</em> is negative.
 </p>
 </blockquote>
 <p>
-Thus <em>r</em> is negative iff <em>d</em> is non-negative.
+Thus a nonzero <em>r</em> is negative iff <em>d</em> is non-negative.
 </p>
 <p>
-If <em>denominator</em> is the number of units in a block, and &lt;numerator&gt; is
+If <em>denominator</em> is the number of units in a block, and <em>numerator</em>; is
 some number of units, then <tt>(ceiling-quotient </tt><em>numerator</em> <em>denominator</em><tt>)</tt>
 gives the number of blocks needed to cover <em>numerator</em> units.  For
 example, <em>denominator</em> might be the number of bytes in a disk sector, and
@@ -206,9 +206,7 @@ hash values needed to concatenate to make a key.
 </p>
 </blockquote>
 <p>
-Thus <em>r</em> is negative iff <em>n</em> is negative.  However, by any non-unit denominator, the
-quotient of +1, 0, or -1 is 0; that is, three contiguous numerators by
-a common denominator share a common quotient.  Of the other division
+Thus a nonzero <em>r</em> is negative iff <em>n</em> is negative.  With the truncate operator pair, the quotient of +1, 0, or -1 by any non-unit denominator is 0; that is, three contiguous numerators divided by a common denominator share a common quotient.   Of the other division
 operator pairs, only the round pair exhibits this property.
 </p>
 <p>
